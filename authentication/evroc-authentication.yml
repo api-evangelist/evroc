@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.evroc.com/products/iam/authentication.html
+docs: https://docs.evroc.com/products/iam/authentication.html
+summary:
+  types: [oauth2, http]
+  http_scheme: bearer
+  oauth2_flows: [oidc]
+  token_ttl_seconds: 300
+  api_key_in: []
+schemes:
+- name: bearerToken
+  type: http
+  scheme: bearer
+  description: >-
+    REST API requests carry an "Authorization: Bearer {token}" header. Access tokens are obtained
+    via the CLI (evroc iam get-access-token / evroc login) or the documented Python OIDC flow, and
+    expire after 5 minutes.
+  sources: [https://docs.evroc.com/gettingstarted.html]
+- name: oidc
+  type: openIdConnect
+  description: >-
+    Access tokens are issued through an OpenID Connect flow against the evroc IAM authorization
+    server. evroc publishes an example Python OIDC script for programmatic token acquisition.
+  sources: [https://docs.evroc.com/products/iam/authentication.html]
+- name: serviceAccount
+  type: http
+  scheme: basic
+  description: >-
+    Non-interactive workloads authenticate with service-account credentials supplied as environment
+    variables (EVROC_USERNAME, EVROC_PASSWORD, EVROC_PROJECT, EVROC_REGION) which the SDK/CLI
+    exchange for a Bearer access token.
+  sources: [https://github.com/evroc-oss/evroc-go-sdk]
+console_auth:
+  method: email-password
+  mfa: TOTP (optional, strongly recommended)
+  description: >-
+    Human console access at cloud.evroc.com uses email + password with optional time-based one-time
+    password (TOTP) multi-factor authentication.
+authorization:
+  model: RoleBindings
+  description: >-
+    Fine-grained permission system (released 2026-07-15) that assigns roles to identities via
+    RoleBindings, replacing the deprecated PermissionSets. Scoped to organizations and projects.
+  deprecated: [PermissionSets]
