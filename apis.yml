@@ -1,8 +1,29 @@
 aid: evroc
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/evroc.png
 name: evroc
-description: 'evroc is a company surfaced as a portfolio company of eqt-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: cloud-computing. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  evroc is a European sovereign cloud provider headquartered in Stockholm, Sweden, building
+  cloud infrastructure for the AI era for organizations that require the highest level of data
+  security and European data residency. Its platform spans Compute (virtual machines, disks,
+  snapshots, placement groups), Networking (VPCs, subnets, public IPs, security groups, IPv6,
+  load balancers), Storage (S3-compatible object storage and file store), IAM (organizations,
+  projects, service accounts, and a fine-grained RoleBindings permission system), Quotas, and
+  Think (shared and dedicated AI-model inference). Developers reach the platform through a web
+  console, a REST API with Bearer/OIDC access tokens, an official Go SDK, a Terraform provider,
+  a Kubernetes CSI driver, and the evroc CLI. The company emphasizes European sovereignty,
+  sustainability, and security, operating from the Stockholm (se-sto) region.
 url: https://raw.githubusercontent.com/api-evangelist/evroc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cloud Computing
+- Sovereign Cloud
+- Infrastructure
+- Object Storage
+- Compute
+- AI Infrastructure
+- GPU
+- Europe
+- IaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,61 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/evroc-trust-center.yml
 - type: Website
   url: https://evroc.com/
+- type: DeveloperPortal
+  url: https://docs.evroc.com/
+- type: Documentation
+  url: https://docs.evroc.com/introduction.html
+- type: APIReference
+  url: https://docs.evroc.com/apis/compute.html
+- type: GettingStarted
+  url: https://docs.evroc.com/gettingstarted.html
+- type: Support
+  url: https://docs.evroc.com/support.html
+- type: Blog
+  url: https://evroc.com/developer/blog/
+- type: GitHubOrganization
+  url: https://github.com/evroc-oss
+- type: StatusPage
+  url: https://status.evroc.com/
+- type: SignUp
+  url: https://signup.evroc.com/
+- type: Login
+  url: https://cloud.evroc.com/
+- type: TermsOfService
+  url: https://evroc.com/legal/general-terms-and-conditions
+- type: PrivacyPolicy
+  url: https://evroc.com/legal/privacy-notice
+- type: ChangeLog
+  url: https://docs.evroc.com/changelog.html
+- type: ChangeLog
+  name: evroc changelog (artifact)
+  url: changelog/evroc-changelog.yml
+- type: Authentication
+  url: authentication/evroc-authentication.yml
+- type: Packages
+  url: packages/evroc-packages.yml
+- type: SDKs
+  url: packages/evroc-packages.yml
+- type: CLI
+  url: cli/evroc-cli.yml
+- type: Lifecycle
+  url: lifecycle/evroc-lifecycle.yml
+- type: Deprecation
+  url: https://docs.evroc.com/changelog.html
+- type: Conventions
+  url: conventions/evroc-conventions.yml
+- type: Conformance
+  url: conformance/evroc-conformance.yml
+- type: Compliance
+  url: https://evroc.com/security/
+- type: DomainSecurity
+  url: security/evroc-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

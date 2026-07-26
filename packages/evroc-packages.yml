@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.evroc.com/integrations/go-sdk.html
+packages:
+- language: go
+  registry: pkg.go.dev
+  name: github.com/evroc-oss/evroc-go-sdk
+  url: https://github.com/evroc-oss/evroc-go-sdk
+  install: go get github.com/evroc-oss/evroc-go-sdk
+  official: true
+  notes: >-
+    Official evroc Go SDK (Apache-2.0). Requires Go 1.24+. Authenticates via evroc CLI config
+    (evroc.NewFromEnv) or service-account env vars (EVROC_USERNAME/EVROC_PASSWORD/EVROC_PROJECT/EVROC_REGION).
+- language: hcl
+  registry: terraform-registry
+  name: evroc-oss/evroc
+  url: https://registry.terraform.io/providers/evroc-oss/evroc/latest
+  install: terraform { required_providers { evroc = { source = "evroc-oss/evroc" } } }
+  official: true
+  notes: >-
+    Official evroc Terraform provider (also on OpenTofu registry at
+    https://search.opentofu.org/provider/evroc-oss/evroc/latest). Source:
+    https://github.com/evroc-oss/terraform-provider-evroc. Requires Terraform 1.0+ / OpenTofu 1.9+.
+- language: go
+  registry: github
+  name: evroc-csi-driver
+  url: https://github.com/evroc-oss/evroc-csi-driver
+  install: helm/manifest deploy (Kubernetes CSI driver)
+  official: true
+  notes: Official evroc Kubernetes CSI driver for provisioning evroc storage as persistent volumes (Apache-2.0).
+- language: binary
+  registry: evroc-downloads
+  name: evroc CLI
+  url: https://downloads.evroc.com/evroc-cli/latest/
+  install: download binary, chmod +x evroc, add to PATH, evroc login
+  official: true
+  notes: >-
+    Official first-party CLI binary distributed from downloads.evroc.com. Command surface catalogued
+    in cli/evroc-cli.yml.

@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.evroc.com/
+authentication:
+  style: bearer-token
+  header: 'Authorization: Bearer {token}'
+  token_ttl_seconds: 300
+  detail: >-
+    Short-lived (5-minute) OIDC-issued Bearer access tokens for the REST API; see
+    authentication/evroc-authentication.yml.
+authorization:
+  model: RoleBindings (fine-grained), scoped to organizations and projects
+regions:
+  style: explicit-region
+  values: [se-sto]
+  detail: Resources and API calls are region-scoped; the Go SDK/CLI take EVROC_REGION (e.g. se-sto).
+projects:
+  detail: Resources live inside projects within an organization; requests carry a project context (EVROC_PROJECT).
+object_storage:
+  s3_compatible: true
+  detail: >-
+    Object Storage exposes an AWS S3-compatible API surface ("AWS S3 Feature Compatibility"),
+    supporting bucket operations, service accounts, and credential management.
+idempotency:
+  documented: false
+  detail: No provider-documented idempotency-key mechanism was found in the public docs at capture time.
+pagination:
+  documented: unknown
+  detail: Pagination conventions are not published on the static docs pages (API references render client-side).
+error_envelope:
+  documented: unknown
+  detail: A published error-envelope shape was not confirmable from the static docs pages.
+cross_links:
+  authentication: authentication/evroc-authentication.yml
+  lifecycle: lifecycle/evroc-lifecycle.yml
+  conformance: conformance/evroc-conformance.yml

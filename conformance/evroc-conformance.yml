@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.evroc.com/
+standards:
+- id: aws-s3-api
+  conforms: true
+  evidence: >-
+    Object Storage documents "AWS S3 Feature Compatibility" and supports S3-style bucket/object
+    operations, service accounts, and credential management.
+  docs: https://docs.evroc.com/products/storage/object-storage/getting-started.html
+- id: oidc
+  conforms: true
+  evidence: Access tokens are issued via an OpenID Connect flow; evroc publishes a Python OIDC example.
+  docs: https://docs.evroc.com/products/iam/authentication.html
+- id: oauth2-bearer
+  conforms: true
+  evidence: 'REST API accepts "Authorization: Bearer {token}" access tokens.'
+  docs: https://docs.evroc.com/gettingstarted.html
+- id: kubernetes-csi
+  conforms: true
+  evidence: Official evroc Kubernetes CSI driver (Container Storage Interface).
+  docs: https://docs.evroc.com/integrations/csi-driver.html
+- id: european-data-sovereignty
+  conforms: true
+  evidence: >-
+    Positioned as a European sovereign cloud with EU data residency; operates from the Stockholm
+    (se-sto) region and publishes a GDPR-oriented legal suite (Data Processing Addendum, Data
+    Protection Policy, Privacy Notice).
+  docs: https://evroc.com/legal/
+- id: iso-27001
+  conforms: true
+  evidence: ISO 27001 certification named on the evroc security/trust page.
+  docs: https://evroc.com/security/
+- id: gdpr
+  conforms: true
+  evidence: GDPR compliance named on the evroc security/trust page and legal suite.
+  docs: https://evroc.com/security/
+notes: >-
+  Conformance asserted from public documentation, the legal suite, and the security/trust page
+  (evroc.com/security/), which names ISO 27001 and GDPR. See security/evroc-trust-center.yml.

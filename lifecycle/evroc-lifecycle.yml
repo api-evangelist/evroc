@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.evroc.com/changelog.html
+versioning:
+  scheme: product-semantic-prerelease
+  current: v1beta2
+  detail: >-
+    Products carry pre-release semantic versions (Compute and Networking are at v1beta2 as of
+    2026-06-26). Platform changes are announced via a date-based changelog.
+  docs: https://docs.evroc.com/changelog.html
+deprecation:
+  policy_url: https://docs.evroc.com/changelog.html
+  detail: >-
+    Deprecations are announced in the changelog. Example: the 2026-07-15 fine-grained permission
+    release deprecated PermissionSets in favor of RoleBindings.
+  deprecated_features:
+  - name: PermissionSets
+    replaced_by: RoleBindings
+    announced: '2026-07-15'
+status_page: https://status.evroc.com/
+status_components:
+- Compute
+- Console
+- IAM
+- Storage
+- Think - AI Models
+support:
+  url: https://docs.evroc.com/support.html
+  email: support@evroc.com
+  hours: Basic support Mon-Fri 08:00-17:00 CET; 24/7 on Starter plans and higher
+region:
+  primary: se-sto
+  location: Stockholm, Sweden

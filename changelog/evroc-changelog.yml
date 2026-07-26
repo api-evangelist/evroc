@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.evroc.com/changelog.html
+scheme: date-based
+notes: >-
+  evroc publishes a dated changelog (day month year). Individual products carry semantic
+  pre-release version numbers (e.g. Compute/Networking v1beta2). Recent window captured below.
+current_products:
+- product: Compute
+  version: v1beta2
+- product: Networking
+  version: v1beta2
+entries:
+- date: '2026-07-16'
+  breaking: false
+  additions: true
+  highlights:
+  - Documentation added explaining user management and invitations for the platform.
+- date: '2026-07-15'
+  breaking: true
+  additions: true
+  highlights:
+  - Released evroc's fine-grained permission system.
+  - Deprecates PermissionSets in favor of RoleBindings, a more powerful way to define and assign permissions.
+- date: '2026-06-26'
+  breaking: false
+  additions: true
+  highlights:
+  - v1beta2 release for Compute and Networking.
+  - Configurable subnets and Virtual Private Clouds (VPCs).
+  - IPv6 networking.
+  - Disk snapshots.

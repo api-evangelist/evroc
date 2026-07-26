@@ -1,0 +1,44 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.evroc.com/cli.html
+name: evroc
+binary: evroc
+description: >-
+  First-party command-line interface for the evroc sovereign cloud platform, covering compute,
+  networking, storage, IAM, load balancing, and Think AI-model management.
+install:
+  method: binary-download
+  url: https://downloads.evroc.com/evroc-cli/latest/
+  steps:
+  - Download the pre-built binary for your platform from downloads.evroc.com/evroc-cli/latest/
+  - chmod +x evroc
+  - Move it onto your PATH
+  - evroc login
+authentication:
+  command: evroc login
+  token_command: evroc iam get-access-token
+  model: >-
+    Interactive login (email/password + optional TOTP MFA) or service-account credentials; issues
+    short-lived Bearer access tokens used by the CLI, SDK, and REST API.
+command_groups:
+- name: compute
+  description: Virtual machines, disks, snapshots, and placement groups
+- name: networking
+  description: Public IPs, security groups, subnets, and VPCs
+- name: storage
+  description: Object storage buckets and file stores
+- name: loadbalancer
+  description: Load balancing resources
+- name: iam
+  description: Authentication, projects, role bindings, get-access-token, get-user-info
+- name: think
+  description: AI model instances and management
+- name: config
+  description: Profile and project configuration
+- name: login
+  description: Authenticate to evroc
+- name: completion
+  description: Shell completion installation
+- name: version
+  description: Version information
+reference: https://docs.evroc.com/cli-help/evroc.html
