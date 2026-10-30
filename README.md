@@ -64,6 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-evroc is a company surfaced as a portfolio company of eqt-ventures and added to the API Evangelist network as a stub for enrichment. Sector: cloud-computing. This profile is a lead awaiting the enrichment pipeline.
+evroc is a European sovereign cloud provider headquartered in Stockholm, Sweden, building cloud infrastructure for the AI era for organizations that require the highest level of data security and European data residency. Its platform spans Compute (virtual machines, disks, snapshots, placement groups), Networking (VPCs, subnets, public IPs, security groups, IPv6, load balancers), Storage (S3-compatible object storage and file store), IAM (organizations, projects, service accounts, and a fine-grained RoleBindings permission system), Quotas, and Think (shared and dedicated AI-model inference). Developers reach the platform through a web console, a REST API with Bearer/OIDC access tokens, an official Go SDK, a Terraform provider, a Kubernetes CSI driver, and the evroc CLI. The company emphasizes European sovereignty, sustainability, and security, operating from the Stockholm (se-sto) region.
 
-Backed by: eqt-ventures — https://evroc.com/
+**Areas:** Company · Cloud Computing · Sovereign Cloud · Infrastructure · Object Storage · Compute · AI Infrastructure · GPU · Europe · Infrastructure-as-a-Service
+
+## evroc on APIs.io
+
+Everything profiled for evroc is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/evroc/](https://apis.io/providers/evroc/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Evroc Authentication](https://apis.io/security/evroc/evroc-authentication/)
+- [Evroc Domain Security](https://apis.io/security/evroc/evroc-domain-security/)
+- [Evroc Trust Center](https://apis.io/security/evroc/evroc-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://evroc.com/)
+- [Documentation](https://docs.evroc.com/introduction.html)
+- [Getting started](https://docs.evroc.com/gettingstarted.html)
+- [API reference](https://docs.evroc.com/apis/compute.html)
+- [Sign up](https://signup.evroc.com/)
+- [Support](https://docs.evroc.com/support.html)
+- [Changelog](https://docs.evroc.com/changelog.html)
+- [Blog](https://evroc.com/developer/blog/)
+- [Compliance](https://evroc.com/security/)
+- [Terms of service](https://evroc.com/legal/general-terms-and-conditions)
+- [Privacy policy](https://evroc.com/legal/privacy-notice)
+- [GitHub](https://github.com/evroc-oss)
+- [Status](https://status.evroc.com/)
+
+## API Evangelist rating
+
+**Kin Score 38.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 71.4 |
+| Access clarity | 50.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/evroc/](https://apis.io/providers/evroc/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for evroc: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/evroc/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
